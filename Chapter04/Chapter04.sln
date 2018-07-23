@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WritingFunctions", "WritingFunctions\WritingFunctions.csproj", "{EDDA2D02-91C1-4B08-B86F-1E03441B5E14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardinalToOrdinal", "CardinalToOrdinal\CardinalToOrdinal.csproj", "{0404C39A-7AD7-41DD-BD17-C182BA612947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardinalToOrdinal", "CardinalToOrdinal\CardinalToOrdinal.csproj", "{0404C39A-7AD7-41DD-BD17-C182BA612947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging", "Debugging\Debugging.csproj", "{BB4E1E9C-6B35-4117-92CF-88737636F4D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0404C39A-7AD7-41DD-BD17-C182BA612947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0404C39A-7AD7-41DD-BD17-C182BA612947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0404C39A-7AD7-41DD-BD17-C182BA612947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4E1E9C-6B35-4117-92CF-88737636F4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4E1E9C-6B35-4117-92CF-88737636F4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4E1E9C-6B35-4117-92CF-88737636F4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4E1E9C-6B35-4117-92CF-88737636F4D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
