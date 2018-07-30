@@ -48,6 +48,8 @@ namespace PeopleApp
             WriteLine($"{ba2.AccountName} earned {ba2.Balance * BankAccount.InterestRate:C} interest.");
 
             WriteLine($"{p1.Name} is a {Person.Species}");
+
+            WriteLine($"{p1.Name} was born on {p1.HomePlanet}");
         }
     }
 }
