@@ -46,6 +46,8 @@ namespace PeopleApp
             ba2.AccountName = "Ms. Gerrier";
             ba2.Balance = 98;
             WriteLine($"{ba2.AccountName} earned {ba2.Balance * BankAccount.InterestRate:C} interest.");
+
+            WriteLine($"{p1.Name} is a {Person.Species}");
         }
     }
 }
