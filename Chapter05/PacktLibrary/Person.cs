@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Packt.CS7
 {
@@ -9,5 +10,6 @@ namespace Packt.CS7
         public DateTime DateOfBirth;
         public WondersOfAncientWorld FavouriteAncientwonder;
         public WondersOfAncientWorld BucketList;
+        public List<Person> Children = new List<Person>();
     }
 }
