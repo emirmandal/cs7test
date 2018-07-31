@@ -56,6 +56,9 @@ namespace PeopleApp
 
             var p4 = new Person("Aziz");
             WriteLine($"{p4.Name} was instantiated at {p4.Instantiated:hh:mm:ss} on {p4.Instantiated:dddd, d MMMM yyyy}");
+
+            p1.WriteToConsole();
+            WriteLine(p1.GetOrigin());
         }
     }
 }

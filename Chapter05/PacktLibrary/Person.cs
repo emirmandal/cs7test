@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using static System.Console;
 
 namespace Packt.CS7
 {
@@ -32,6 +33,16 @@ namespace Packt.CS7
         {
             Name = initialName;
             Instantiated = DateTime.Now;
+        }
+
+        // methods
+        public void WriteToConsole()
+        {
+            WriteLine($"{Name} was born on {DateOfBirth:dddd, d MMMM yyyy}");
+        }
+        public string GetOrigin()
+        {
+            return $"{Name} was born on {HomePlanet}";
         }
 
     }
