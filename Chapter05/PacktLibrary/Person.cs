@@ -45,5 +45,22 @@ namespace Packt.CS7
             return $"{Name} was born on {HomePlanet}";
         }
 
+        // the old C# 4 and .NET 4.0 System.Tuple type
+        public Tuple<string, int> GetFruitCS4()
+        {
+            return Tuple.Create("Apples", 5);
+        }
+
+        // the new C# 7 syntax and new System.ValueTuple
+        public (string, int) GetFruitCS7()
+        {
+            return ("Apples", 5);
+        }
+
+        public (string Name, int Number) GetNamedFruit()
+        {
+            return (Name: "Apples", Number: 5);
+        }
+
     }
 }
