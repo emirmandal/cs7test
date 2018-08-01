@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace Packt.CS7
 {
-    public class Person : Object
+    public partial class Person : Object
     {
         // fields
         public string Name;
@@ -62,5 +62,31 @@ namespace Packt.CS7
             return (Name: "Apples", Number: 5);
         }
 
+        public string SayHello()
+        {
+            return $"{Name} says 'Hello'!";
+        }
+
+        public string SayHello(string name)
+        {
+            return $"{Name} says 'Hello {name}!'";
+        }
+
+        public string OptionalParameters(string command = "Run!", double number = 0.0, bool active = true)
+        {
+            return $"command is {command}, number is {number}, active is {active}";
+        }
+
+        public void PassingParameters(int x, ref int y, out int z)
+        {
+            // out paramteters cannot have a default
+            // AND must be initialized inside the method
+            z = 99;
+
+            // increment each parameter
+            x++;
+            y++;
+            z++;
+        }
     }
 }
