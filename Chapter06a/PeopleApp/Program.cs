@@ -62,6 +62,21 @@ namespace PeopleApp
             {
                 WriteLine($"{person.Name}");
             }
+
+            var t = new Thing();
+            t.Data = 42;
+            WriteLine($"Thing: {t.Process("42")}");
+
+            var gt = new GenericThing<int>();
+            gt.Data = 42;
+            WriteLine($"GenericThing: {gt.Process("42")}");
+
+            string number1 = "4";
+            WriteLine($"{number1} squared is {Squarer.Square<string>(number1)} ");
+
+            byte number2 = 3;
+            WriteLine($"{number2} squared is {Squarer.Square<byte>(number2)}");
+
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
