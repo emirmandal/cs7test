@@ -116,6 +116,24 @@ namespace PeopleApp
                 // do something with e3
             }
 
+            try
+            {
+                e1.TimeTravel(new DateTime(1999, 12, 31));
+                e1.TimeTravel(new DateTime(1950, 12, 25));
+            }
+            catch (PersonException ex)
+            {
+                WriteLine(ex.Message);
+            }
+
+            string email1 = "pamela@test.com";
+            string email2 = "ian&test.com";
+
+            WriteLine($"{email1} is a valid e-mail address: {StringExtension.IsValidEmail(email1)}.");
+            WriteLine($"{email2} is a valid e-mail address: {StringExtension.IsValidEmail(email2)}.");
+
+            WriteLine($"{email1} is a valid e-mail address: {email1.IsValidEmail()}.");
+            WriteLine($"{email2} is a valid e-mail address: {email2.IsValidEmail()}.");
         }
 
         private static void Harry_Shout(object sender, EventArgs e)
